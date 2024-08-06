@@ -59,14 +59,14 @@ jobs:
         env:
           ### Required configuration when integrating with Fortify on Demand
           FOD_URL: https://ams.fortify.com
-          FOD_TENANT: DXC_Demo
-          FOD_USER: Kavya_Demo
-          FOD_PASSWORD: Kavyademo@123
+          FOD_TENANT: 
+          FOD_USER: 
+          FOD_PASSWORD: 
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
           # EXTRA_FOD_LOGIN_OPTS: --socket-timeout=60s     # Extra 'fcli fod session login' options
-          # FOD_RELEASE: 1007457                   # FoD release name, default: <org>/<repo>:<branch>; may
+          # FOD_RELEASE:                    # FoD release name, default: <org>/<repo>:<branch>; may
                                                            # replace app+release name with numeric release ID
           # DO_WAIT: true                                  # Wait for scan completion, implied if 'DO_EXPORT: true'
           # DO_EXPORT: true                                # Export SAST results to GitHub code scanning dashboard
