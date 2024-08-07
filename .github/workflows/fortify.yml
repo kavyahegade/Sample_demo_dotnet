@@ -53,20 +53,20 @@ jobs:
       # and run them directly from within your pipeline; see https://github.com/fortify/github-action#readme for
       # details.
       - name: Run FoD SAST Scan
-        uses: fortify/github-action@a92347297e02391b857e7015792cd1926a4cd418
+        uses: fortify/github-action@v1.2.2
         with:
           sast-scan: true
         env:
           ### Required configuration when integrating with Fortify on Demand
           FOD_URL: https://ams.fortify.com
-          FOD_TENANT: 
-          FOD_USER: 
-          FOD_PASSWORD: 
+          FOD_TENANT: DXC_Demo
+          FOD_USER: Kavya_Demo
+          FOD_PASSWORD: Kavyademo@123
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
           # EXTRA_FOD_LOGIN_OPTS: --socket-timeout=60s     # Extra 'fcli fod session login' options
-          # FOD_RELEASE:                    # FoD release name, default: <org>/<repo>:<branch>; may
+          # FOD_RELEASE: 1240267                   # FoD release name, default: <org>/<repo>:<branch>; may
                                                            # replace app+release name with numeric release ID
           # DO_WAIT: true                                  # Wait for scan completion, implied if 'DO_EXPORT: true'
           # DO_EXPORT: true                                # Export SAST results to GitHub code scanning dashboard
